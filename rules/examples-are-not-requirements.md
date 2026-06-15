@@ -1,12 +1,26 @@
 # Rule: Examples Are Not Requirements
 
-Users may describe frontend style with informal examples because they do not know the exact design vocabulary.
+## Use When
 
-Do not treat those examples as fixed requirements unless the user explicitly says they are mandatory.
+Use whenever the user describes visual direction with informal examples, named products, design trends, materials, websites, apps, operating systems, screenshots, or vague style words.
 
-## Separate The Input
+Examples include phrases like:
 
-When the user gives a visual example, separate:
+- "Like this."
+- "Kind of future feeling."
+- "Similar to this app."
+- "That transparent / soft / premium feeling."
+- "Dynamic, cinematic, advanced."
+
+## Rule
+
+Treat examples as clues, not requirements.
+
+Only upgrade an example into a hard requirement when the user explicitly confirms it is mandatory.
+
+## If
+
+If the user gives a visual example, named reference, trend, material, or non-professional style description, identify:
 
 - Hard requirements.
 - Reference examples.
@@ -15,9 +29,13 @@ When the user gives a visual example, separate:
 - Agent assumptions.
 - Questions that need confirmation.
 
-## Translate Examples Into Design Variables
+If the user says a style example is mandatory, record it as a confirmed requirement and state the confirmation.
 
-Translate examples into variables such as:
+## Then
+
+Translate examples into design variables before choosing tracks, modes, or design options.
+
+Use variables such as:
 
 - Hierarchy.
 - Information density.
@@ -29,13 +47,40 @@ Translate examples into variables such as:
 - Interaction feedback.
 - Platform fit.
 - Performance tolerance.
+- Brand memorability.
+- Operational efficiency.
 
-## Do Not Hard-Code Examples
+Generate product-appropriate directions from those variables rather than copying the example.
 
-Do not create or enforce a dedicated design rule for a single example such as a named product, operating system, design trend, material, website, app, or visual effect.
+## Do
 
-Only upgrade an example into a hard constraint when the user explicitly confirms it.
+- Ask what the example is meant to express when the meaning is unclear.
+- Preserve the user's intent in plain language.
+- Offer multiple directions when the example could imply different outcomes.
+- State which parts are confirmed and which parts are inferred.
+- Use examples to enrich vocabulary, not to narrow the solution prematurely.
 
-## Use Examples Correctly
+## Do Not
 
-Use examples to understand what the user is gesturing toward, then generate multiple product-appropriate design directions.
+- Do not create a dedicated rule file for a single user-provided example.
+- Do not hard-code a named product, operating system, trend, material, website, app, or visual effect.
+- Do not say the design must follow an example unless the user said so.
+- Do not collapse a user's broad aesthetic intent into one fixed visual treatment.
+- Do not use an example as a substitute for product, platform, workflow, or accessibility reasoning.
+
+## Stop And Ask
+
+Stop and ask the user when:
+
+- The example could mean several different design intents.
+- The example conflicts with usability, accessibility, platform, or performance needs.
+- The user seems to expect a specific style but has not confirmed it as mandatory.
+- Turning the example into a constraint would materially affect implementation cost.
+
+## Output Impact
+
+Requirement summaries must separate examples from hard requirements.
+
+Design options must explain how they interpret the user's examples as design variables.
+
+Design briefs must list any example that has been explicitly confirmed as a hard constraint.
