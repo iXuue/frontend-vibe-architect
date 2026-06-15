@@ -1,39 +1,147 @@
 ---
 name: frontend-future-design
-description: Use when the user wants an agent to read frontend requirements, design product-appropriate UI options, and produce execution-ready frontend design steps for websites, web apps, dashboards, AI tools, mobile directions, mini program directions, desktop software directions, or data visualization surfaces.
+description: Use when the user wants an agent to read frontend requirements, separate hard requirements from reference examples, choose the right frontend track, generate product-appropriate UI design options, and produce execution-ready frontend implementation steps.
 ---
 
 # Frontend Future Design
 
-This skill reads a user's requirement document, classifies the frontend product surface, proposes design directions, and converts the selected direction into execution-ready frontend design steps.
+This skill is a requirement-driven frontend design router.
 
-## Layered Reading Order
+It reads a user's requirement document or lightweight request, classifies the frontend surface, chooses the right design track and visual mode, applies safety rules, and produces stable frontend design outputs.
+
+## Required Workflow
+
+Always follow this order for substantial frontend work:
 
 1. Read `flows/intake.md`.
-2. Read `flows/choose-track.md`.
-3. Read the selected file from `tracks/`.
-4. Read `rules/reference-adaptation.md`.
-5. Read `rules/examples-are-not-requirements.md`.
-6. Read the relevant files from `modes/`.
-7. Read any relevant files from `rules/`.
-8. Use the required template from `output/`.
+2. Produce a requirement summary with `output/requirement-summary.md`.
+3. Read `flows/choose-track.md`.
+4. Choose one primary track and optional secondary track.
+5. Read the selected track file from `tracks/`.
+6. Read `rules/reference-adaptation.md`.
+7. Read `rules/examples-are-not-requirements.md`.
+8. Choose one or more mode files from `modes/`.
+9. Read any additional rule files needed by the request.
+10. Generate design options with `flows/design-options.md` and `output/design-options.md`.
+11. Ask for user direction when required.
+12. Produce a design brief with `output/design-brief.md` after direction confirmation or low-risk recommendation.
+13. Produce execution-ready frontend steps with `flows/execution-steps.md` and `output/frontend-execution-plan.md` when implementation planning is requested.
+14. Use `flows/handoff.md` before final response.
 
-## Mandatory Sequence
+## Routing Table
 
-1. Intake the requirement.
-2. Output a requirement summary.
-3. Choose one primary track and optional secondary track.
-4. Choose one or more visual modes.
-5. Generate 2-4 design options when direction is not already precise.
-6. Ask for user direction when scope is broad, high-impact, or visually ambiguous.
-7. Produce a design brief after the direction is confirmed or low-risk recommendation is justified.
-8. Produce execution-ready frontend design steps.
-9. Verify against `rules/verification.md` before final handoff for implemented UI.
+Use these routing rules as pseudo-code. Read the matching files; do not treat this table as a replacement for the detailed layer files.
+
+### Intake Routing
+
+```text
+IF request is frontend design, redesign, critique, planning, or implementation:
+  READ flows/intake.md
+  OUTPUT output/requirement-summary.md
+
+IF request includes a local .md or .txt requirement path:
+  READ the file content first
+  THEN READ flows/intake.md
+
+IF request is broad, high-impact, or visually ambiguous:
+  DO NOT implement before requirement summary, track choice, mode choice, and direction choice are clear
+```
+
+### Track Routing
+
+```text
+IF request is SaaS, web app, admin, dashboard, AI tool, creative tool, or workspace:
+  READ tracks/web-product.md
+
+IF request is website, landing page, launch page, campaign, portfolio, or brand storytelling:
+  READ tracks/landing-brand.md
+
+IF request is mobile app, mobile web direction, or mini program:
+  READ tracks/mobile-direction.md
+
+IF request is desktop software, professional tool, editor, control panel, or document-like app:
+  READ tracks/desktop-direction.md
+
+IF request is analytics, monitoring, metrics, reporting, large-screen display, or chart-heavy UI:
+  READ tracks/data-visualization.md
+
+IF request fits more than one track:
+  CHOOSE one primary track
+  CHOOSE optional secondary track
+  STATE why
+```
+
+### Mode Routing
+
+```text
+IF product needs memorability, atmosphere, advanced interaction, spatial storytelling, or dynamic data feeling:
+  CONSIDER modes/dynamic-future.md
+
+IF product needs clarity, repeated use, density, accessibility, operational confidence, or low visual fatigue:
+  CONSIDER modes/simple-designed.md
+
+IF both modes are plausible:
+  OFFER both as design options
+
+IF user only gives a visual example:
+  DO NOT choose a mode solely from the example
+  READ rules/examples-are-not-requirements.md
+```
+
+### Rule Routing
+
+```text
+IF using external skills, websites, screenshots, notes, or design references:
+  READ rules/reference-adaptation.md
+
+IF user gives non-professional visual language, style examples, named products, trends, materials, or vague aesthetic terms:
+  READ rules/examples-are-not-requirements.md
+
+IF request involves animation, dynamic background, scroll motion, micro-interactions, GSAP, or motion-heavy UI:
+  READ rules/animation.md
+
+IF implementation exists or final handoff needs quality claims:
+  READ rules/verification.md
+
+IF user asks for a code or skill behavior change not covered by spec/:
+  READ rules/requirement-change-control.md
+```
+
+### Output Routing
+
+```text
+IF intake is complete:
+  USE output/requirement-summary.md
+
+IF design directions are needed:
+  USE output/design-options.md
+
+IF a direction is confirmed or low-risk recommendation is justified:
+  USE output/design-brief.md
+
+IF frontend implementation planning is requested:
+  USE output/frontend-execution-plan.md
+```
+
+## Stop Conditions
+
+Stop and ask the user before proceeding when:
+
+- Product goal is unclear.
+- Target platform would materially change the design.
+- Required screens or workflows are missing.
+- Requirements conflict.
+- User examples may be mistaken for hard requirements.
+- Broad or high-impact UI work has no chosen direction.
+- Implementation is requested before design direction is confirmed.
+- A requested code or skill behavior change is not covered by `spec/`.
+- Verification requires running a local app but no run command or target is known.
 
 ## Hard Rules
 
 - Do not copy reference skills, websites, wording, examples, prompts, or templates directly.
 - Do not turn a user-provided visual example into a fixed requirement unless the user explicitly confirms it.
-- Do not force Dynamic Future Mode onto dense operational tools where clarity matters more.
+- Do not force `modes/dynamic-future.md` onto dense operational tools where clarity matters more.
 - Do not start implementation for broad UI work before requirement summary, track choice, mode choice, and direction choice are clear.
+- Do not claim verification, accessibility, responsiveness, or rendered UI quality unless checked or explicitly marked as unverified.
 - If a requested code change is not covered by `spec/`, follow `rules/requirement-change-control.md`.
