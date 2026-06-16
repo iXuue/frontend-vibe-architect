@@ -19,6 +19,13 @@ Build a dashboard for financial analysts. It should show lots of dense market da
 - Primary: `tracks/data-visualization.md`.
 - Secondary: `tracks/web-product.md`.
 
+## Expected Strategy
+
+- Primary: `strategy/data-insight-first.md` because dense market data, scanning, and analyst decisions are central.
+- Secondary: `strategy/trust-first.md` because financial analysis needs confidence, stability, and readability.
+- Do not choose `strategy/immersive-first.md` as primary despite the user's cinematic style request.
+- If cinematic animation remains important, expose it as a conflict or optional secondary expression in non-critical areas.
+
 ## Expected Modes
 
 - Prefer `modes/simple-designed.md` for scan speed, density, and analyst workflow.

@@ -18,6 +18,12 @@ I need a mobile app interface for a habit and focus product. It should have dail
 - Primary: `tracks/mobile-direction.md`.
 - Secondary: `tracks/data-visualization.md` may be considered for progress and habit statistics.
 
+## Expected Strategy
+
+- Primary: `strategy/efficiency-first.md` because the product supports repeated daily tasks, focus sessions, reminders, and progress checks.
+- Secondary: `strategy/trust-first.md` may be considered because calm focus products need reliable, low-friction, confidence-building behavior.
+- `strategy/data-insight-first.md` may be considered only for progress and habit analytics, not as the whole product strategy.
+
 ## Expected Modes
 
 - Prefer `modes/simple-designed.md` for calm repeated use.

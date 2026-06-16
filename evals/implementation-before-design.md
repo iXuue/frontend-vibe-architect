@@ -16,6 +16,12 @@ Just start coding the frontend. Make it modern and futuristic. You decide the re
 - No final track should be chosen.
 - Candidate tracks may be listed only if framed as assumptions.
 
+## Expected Strategy
+
+- No final strategy should be chosen.
+- Candidate strategies may be mentioned only as examples after the agent explains that product goal, platform, screens, workflows, and success criteria are missing.
+- Do not choose `strategy/expression-first.md` or `strategy/immersive-first.md` from "modern and futuristic" alone.
+
 ## Expected Modes
 
 - No final mode should be chosen.

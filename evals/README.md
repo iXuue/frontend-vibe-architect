@@ -31,6 +31,8 @@ Each eval should use this structure:
 
 ## Expected Track
 
+## Expected Strategy
+
 ## Expected Modes
 
 ## Expected Rules

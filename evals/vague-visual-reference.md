@@ -17,6 +17,12 @@ Make me a website with that futuristic glassy vibe, like the kind of sleek inter
 - No final track should be chosen until the product type is clarified.
 - Possible tracks may be listed as candidates only.
 
+## Expected Strategy
+
+- No final strategy should be chosen until product goal, target platform, users, and required screens or workflows are clarified.
+- Possible strategies may be listed only as examples of what could change after clarification.
+- Do not choose `strategy/immersive-first.md`, `strategy/expression-first.md`, or any other strategy solely from words like "futuristic", "glassy", "expensive", or "dynamic".
+
 ## Expected Modes
 
 - `modes/dynamic-future.md` may be considered as a candidate.

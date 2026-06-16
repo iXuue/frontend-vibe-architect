@@ -19,6 +19,12 @@ Design a landing page for a new AI design studio. I want it to feel memorable, p
 - Primary: `tracks/landing-brand.md`.
 - Secondary: `tracks/web-product.md` only if the page includes a real interactive product demo.
 
+## Expected Strategy
+
+- Primary: `strategy/conversion-first.md` because the page must explain an offer and drive booking.
+- Secondary: `strategy/expression-first.md` because memorability, premium tone, and future-facing brand impression are part of the requirement.
+- `strategy/immersive-first.md` may be considered only if atmosphere supports the offer and does not hide proof or CTA.
+
 ## Expected Modes
 
 - Consider `modes/dynamic-future.md` for memorability, atmosphere, and premium impression.

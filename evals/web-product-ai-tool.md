@@ -19,6 +19,12 @@ I want to build a web app for an AI writing workspace. It should feel advanced a
 - Primary: `tracks/web-product.md`.
 - Secondary: `tracks/desktop-direction.md` may be considered if the interface is dense and editor-like.
 
+## Expected Strategy
+
+- Primary: `strategy/efficiency-first.md` because the product is a repeated-use writing workspace with editor, history, model settings, and comparison workflows.
+- Secondary: `strategy/expression-first.md` may be considered only for controlled product personality and polish.
+- Do not choose `strategy/immersive-first.md` as the primary strategy unless the requirement changes from daily work tool to presentation or demo experience.
+
 ## Expected Modes
 
 - Consider `modes/simple-designed.md` for daily usability and dense work.
