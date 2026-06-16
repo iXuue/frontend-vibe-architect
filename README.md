@@ -41,6 +41,7 @@ frontend-vibe-architect
 - SKILL.md      # Entry router and pseudo-code routing table
 - flows/        # Step-by-step workflow
 - tracks/       # Product and platform design paths
+- strategy/     # Requirement-derived design priorities
 - modes/        # Visual direction modes
 - rules/        # Decision gates and safety rules
 - output/       # Stable response templates
@@ -58,13 +59,14 @@ The intended flow is:
 1. Read the user requirement.
 2. Produce a requirement summary.
 3. Choose a primary track and optional secondary track.
-4. Choose relevant visual modes.
-5. Apply rules for examples, reference adaptation, animation, verification, and change control.
-6. Generate 2-4 design directions when needed.
-7. Ask the user to choose or refine a direction when the scope is broad or ambiguous.
-8. Produce a design brief.
-9. Produce execution-ready frontend design steps when implementation planning is requested.
-10. Verify or state what remains unverified.
+4. Choose a primary design strategy and optional secondary strategy.
+5. Choose relevant visual modes.
+6. Apply rules for examples, reference adaptation, animation, verification, language interpretation, and change control.
+7. Generate 2-4 design directions when needed.
+8. Ask the user to choose or refine a direction when the scope is broad or ambiguous.
+9. Produce a design brief.
+10. Produce execution-ready frontend design steps when implementation planning is requested.
+11. Verify or state what remains unverified.
 
 ## Examples
 

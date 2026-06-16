@@ -18,15 +18,18 @@ Always follow this order for substantial frontend work:
 3. Read `flows/choose-track.md`.
 4. Choose one primary track and optional secondary track.
 5. Read the selected track file from `tracks/`.
-6. Read `rules/reference-adaptation.md`.
-7. Read `rules/examples-are-not-requirements.md`.
-8. Choose one or more mode files from `modes/`.
-9. Read any additional rule files needed by the request.
-10. Generate design options with `flows/design-options.md` and `output/design-options.md`.
-11. Ask for user direction when required.
-12. Produce a design brief with `output/design-brief.md` after direction confirmation or low-risk recommendation.
-13. Produce execution-ready frontend steps with `flows/execution-steps.md` and `output/frontend-execution-plan.md` when implementation planning is requested.
-14. Use `flows/handoff.md` before final response.
+6. Read `strategy/README.md`.
+7. Choose one primary strategy and optional secondary strategy.
+8. Read the selected strategy file from `strategy/`.
+9. Read `rules/reference-adaptation.md`.
+10. Read `rules/examples-are-not-requirements.md`.
+11. Choose one or more mode files from `modes/`.
+12. Read any additional rule files needed by the request.
+13. Generate design options with `flows/design-options.md` and `output/design-options.md`.
+14. Ask for user direction when required.
+15. Produce a design brief with `output/design-brief.md` after direction confirmation or low-risk recommendation.
+16. Produce execution-ready frontend steps with `flows/execution-steps.md` and `output/frontend-execution-plan.md` when implementation planning is requested.
+17. Use `flows/handoff.md` before final response.
 
 ## Routing Table
 
@@ -69,6 +72,38 @@ IF request fits more than one track:
   CHOOSE one primary track
   CHOOSE optional secondary track
   STATE why
+```
+
+### Strategy Routing
+
+```text
+AFTER track choice:
+  READ strategy/README.md
+  CHOOSE one primary strategy
+  CHOOSE optional secondary strategy only when product requirements justify it
+  READ the selected strategy file or files
+  STATE why
+
+IF product needs repeated task speed, workflow efficiency, density, or low friction:
+  READ strategy/efficiency-first.md
+
+IF product needs trust, safety, confidence, sensitive decisions, or serious professional use:
+  READ strategy/trust-first.md
+
+IF product needs signup, purchase, booking, trial, lead generation, or offer persuasion:
+  READ strategy/conversion-first.md
+
+IF product needs browsing, discovery, search, filtering, comparison, or optional paths:
+  READ strategy/exploration-first.md
+
+IF product needs brand personality, creativity, memorability, or emotional impression:
+  READ strategy/expression-first.md
+
+IF product needs monitoring, analytics, metrics, reporting, comparison, or decisions from data:
+  READ strategy/data-insight-first.md
+
+IF product needs atmosphere, narrative, spatial feeling, immersive presentation, or high-impact scenes:
+  READ strategy/immersive-first.md
 ```
 
 ### Mode Routing
@@ -130,6 +165,7 @@ IF frontend implementation planning is requested:
 IF request includes vague, subjective, example-based, or non-professional design language:
   FIRST complete output/requirement-summary.md
   THEN choose track through flows/choose-track.md
+  THEN choose strategy through strategy/README.md
   THEN READ rules/style-fit-from-requirements.md
   THEN READ relevant language/
   THEN generate design options or ask required clarification questions
