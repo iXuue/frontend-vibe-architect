@@ -144,6 +144,17 @@ IF considering reference/:
   ONLY READ reference/ when explicitly needed for old-draft comparison
 ```
 
+### Eval Routing
+
+```text
+IF modifying this skill's routing, flows, tracks, modes, rules, outputs, examples, or maintenance docs:
+  READ relevant evals/
+  CHECK expected routing, stop conditions, output templates, and forbidden behavior
+
+IF using this skill for normal frontend design work:
+  DO NOT read evals/ by default
+```
+
 ## Stop Conditions
 
 Stop and ask the user before proceeding when:
@@ -164,6 +175,8 @@ Stop and ask the user before proceeding when:
 - Do not turn a user-provided visual example into a fixed requirement unless the user explicitly confirms it.
 - Do not copy `examples/` as output templates or fixed design recipes.
 - Do not read deprecated `reference/` as the active skill path.
+- Do not use `evals/` as normal design templates or final answer examples.
+- Use `evals/` only for skill maintenance or behavior regression checks.
 - Do not force `modes/dynamic-future.md` onto dense operational tools where clarity matters more.
 - Do not start implementation for broad UI work before requirement summary, track choice, mode choice, and direction choice are clear.
 - Do not claim verification, accessibility, responsiveness, or rendered UI quality unless checked or explicitly marked as unverified.

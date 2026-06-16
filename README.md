@@ -45,6 +45,7 @@ frontend-vibe-architect
 - rules/        # Decision gates and safety rules
 - output/       # Stable response templates
 - examples/     # Calibration examples, not fixed templates
+- evals/        # Behavior checks for skill maintenance
 - reference/    # Deprecated early draft layer, retained for historical context
 - spec/         # Requirement records
 - plan/         # Implementation plans
@@ -78,6 +79,14 @@ Current examples:
 - `examples/informal-visual-example.md`
 
 Use examples to understand expected routing and output shape, not to lock the final design.
+
+## Behavior Evals
+
+The `evals/` folder is a maintenance layer.
+
+Use it when changing this skill's routing, flows, tracks, modes, rules, outputs, examples, or maintenance documentation. It helps check whether a change breaks expected routing, stop conditions, output template use, or forbidden behavior.
+
+Do not read `evals/` by default during normal frontend design work. Do not use eval files as design templates or final answer examples.
 
 ## Deprecated Reference Layer
 
