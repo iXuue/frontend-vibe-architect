@@ -95,6 +95,7 @@ IF using external skills, websites, screenshots, notes, or design references:
   READ rules/reference-adaptation.md
 
 IF user gives non-professional visual language, style examples, named products, trends, materials, or vague aesthetic terms:
+  READ rules/style-fit-from-requirements.md
   READ rules/examples-are-not-requirements.md
 
 IF request involves animation, dynamic background, scroll motion, micro-interactions, GSAP, or motion-heavy UI:
@@ -121,6 +122,21 @@ IF a direction is confirmed or low-risk recommendation is justified:
 
 IF frontend implementation planning is requested:
   USE output/frontend-execution-plan.md
+```
+
+### Language Routing
+
+```text
+IF request includes vague, subjective, example-based, or non-professional design language:
+  FIRST complete output/requirement-summary.md
+  THEN choose track through flows/choose-track.md
+  THEN READ rules/style-fit-from-requirements.md
+  THEN READ relevant language/
+  THEN generate design options or ask required clarification questions
+
+IF user design language conflicts with product-fit strategy:
+  EXPLAIN the conflict
+  OFFER options or ask the user to choose
 ```
 
 ### Example Routing
@@ -177,6 +193,8 @@ Stop and ask the user before proceeding when:
 - Do not read deprecated `reference/` as the active skill path.
 - Do not use `evals/` as normal design templates or final answer examples.
 - Use `evals/` only for skill maintenance or behavior regression checks.
+- Do not choose style from user adjectives before reading requirements and choosing a product track.
+- Do not let `language/` override product-fit reasoning from `rules/style-fit-from-requirements.md`.
 - Do not force `modes/dynamic-future.md` onto dense operational tools where clarity matters more.
 - Do not start implementation for broad UI work before requirement summary, track choice, mode choice, and direction choice are clear.
 - Do not claim verification, accessibility, responsiveness, or rendered UI quality unless checked or explicitly marked as unverified.
