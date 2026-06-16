@@ -38,15 +38,16 @@ Use this skill when the user wants to design, plan, critique, or implement front
 
 ```text
 frontend-vibe-architect
-├─ SKILL.md      # Entry router and pseudo-code routing table
-├─ flows/        # Step-by-step workflow
-├─ tracks/       # Product and platform design paths
-├─ modes/        # Visual direction modes
-├─ rules/        # Decision gates and safety rules
-├─ output/       # Stable response templates
-├─ examples/     # Calibration examples, not fixed templates
-├─ spec/         # Requirement records
-└─ plan/         # Implementation plans
+- SKILL.md      # Entry router and pseudo-code routing table
+- flows/        # Step-by-step workflow
+- tracks/       # Product and platform design paths
+- modes/        # Visual direction modes
+- rules/        # Decision gates and safety rules
+- output/       # Stable response templates
+- examples/     # Calibration examples, not fixed templates
+- reference/    # Deprecated early draft layer, retained for historical context
+- spec/         # Requirement records
+- plan/         # Implementation plans
 ```
 
 ## Workflow
@@ -77,6 +78,21 @@ Current examples:
 - `examples/informal-visual-example.md`
 
 Use examples to understand expected routing and output shape, not to lock the final design.
+
+## Deprecated Reference Layer
+
+The `reference/` folder is an early draft layer.
+
+It is not the active route for this skill. Future agents should start from `SKILL.md` and the active folders:
+
+- `flows/`
+- `tracks/`
+- `modes/`
+- `rules/`
+- `output/`
+- `examples/`
+
+Keep `reference/` only as historical context unless a task explicitly asks to inspect old drafts. Do not delete it without separate explicit confirmation.
 
 ## Current Status
 

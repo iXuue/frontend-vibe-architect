@@ -123,6 +123,27 @@ IF frontend implementation planning is requested:
   USE output/frontend-execution-plan.md
 ```
 
+### Example Routing
+
+```text
+IF agent is unsure how a common request should move through the skill:
+  OPTIONALLY READ examples/
+  USE examples only for calibration of routing and output shape
+  DO NOT copy examples as fixed templates, wording, layouts, or visual recipes
+
+IF examples conflict with user requirements:
+  FOLLOW user requirements after applying requirement summary and rule gates
+```
+
+### Deprecated Reference Routing
+
+```text
+IF considering reference/:
+  TREAT reference/ as deprecated historical context
+  DO NOT use reference/ as the active skill path
+  ONLY READ reference/ when explicitly needed for old-draft comparison
+```
+
 ## Stop Conditions
 
 Stop and ask the user before proceeding when:
@@ -141,6 +162,8 @@ Stop and ask the user before proceeding when:
 
 - Do not copy reference skills, websites, wording, examples, prompts, or templates directly.
 - Do not turn a user-provided visual example into a fixed requirement unless the user explicitly confirms it.
+- Do not copy `examples/` as output templates or fixed design recipes.
+- Do not read deprecated `reference/` as the active skill path.
 - Do not force `modes/dynamic-future.md` onto dense operational tools where clarity matters more.
 - Do not start implementation for broad UI work before requirement summary, track choice, mode choice, and direction choice are clear.
 - Do not claim verification, accessibility, responsiveness, or rendered UI quality unless checked or explicitly marked as unverified.
