@@ -9,7 +9,9 @@ This skill is designed for agents that need to read a user requirement document,
 - Reads frontend requirement documents or lightweight user requests.
 - Separates hard requirements, reference examples, visual intent, assumptions, and open questions.
 - Chooses the right frontend track, such as web product, landing page, mobile direction, desktop direction, or data visualization.
+- Chooses a product-fit design strategy, such as efficiency-first, trust-first, conversion-first, exploration-first, expression-first, data-insight-first, or immersive-first.
 - Chooses suitable visual modes, such as dynamic future or simple designed.
+- Interprets vague user design language after requirement and strategy analysis.
 - Produces multiple design directions before implementation when the request is broad or visually ambiguous.
 - Converts a chosen direction into execution-ready frontend design steps.
 - Adds verification expectations for implemented UI.
@@ -51,6 +53,38 @@ frontend-vibe-architect
 - spec/         # Requirement records
 - plan/         # Implementation plans
 ```
+
+## Architecture Flow
+
+The active routing source is `SKILL.md`. At a high level, the intended design decision flow is:
+
+```text
+Requirement Intake
+-> Track
+-> Strategy
+-> Mode
+-> Language Interpretation
+-> Rules
+-> Output
+-> Evals
+```
+
+This order matters. The skill should not choose a visual style directly from user adjectives or reference examples. It should first understand the product requirements, choose the product/platform track, infer the design strategy, then use modes, language interpretation, rules, and output templates to produce a grounded design direction.
+
+## Layer Responsibilities
+
+- `flows/`: Defines the step-by-step working process, from intake to handoff.
+- `tracks/`: Classifies the frontend surface and product/platform path.
+- `strategy/`: Infers the product-fit design priority after track selection.
+- `modes/`: Describes visual direction modes that can support the selected strategy.
+- `language/`: Interprets vague, subjective, or non-professional user design wording after requirement and strategy analysis.
+- `rules/`: Enforces decision gates, reference adaptation, animation safety, verification, change control, and requirement-first style fit.
+- `output/`: Provides stable output shapes for requirement summaries, design options, design briefs, and frontend execution plans.
+- `examples/`: Provides calibration examples for common request shapes; not fixed templates.
+- `evals/`: Provides behavior checks for maintenance; not normal runtime input.
+- `reference/`: Retains deprecated early drafts for historical context only.
+- `spec/`: Records approved requirements for skill changes.
+- `plan/`: Records implementation plans for skill changes.
 
 ## Workflow
 
@@ -114,9 +148,12 @@ The core layers are in place:
 - Entry routing.
 - Requirement intake.
 - Track selection.
+- Strategy selection.
 - Mode selection.
+- User design language interpretation.
 - Rule gates.
 - Output templates.
 - Calibration examples.
+- Behavior evals.
 
 Future versions may add scripts for consistency checks, routing assistance, or output validation after the Markdown behavior is stable.

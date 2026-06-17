@@ -30,6 +30,11 @@ The purpose is to convert a chosen option into a stable design contract that can
 - Target platform:
 - Primary track:
 - Secondary track:
+- Primary strategy:
+- Secondary strategy:
+- Product-fit evidence:
+- User language interpretation:
+- Strategy-language conflicts:
 - Included screens or sections:
 - Out of scope:
 - Non-goals:
@@ -54,6 +59,7 @@ The purpose is to convert a chosen option into a stable design contract that can
 ### 6. Visual System
 
 - Visual mode:
+- Strategy support:
 - Color roles:
 - Typography roles:
 - Spacing rhythm:
@@ -101,3 +107,5 @@ The purpose is to convert a chosen option into a stable design contract that can
 - Do not include visual choices that cannot be traced to the requirement, selected option, or user confirmation.
 - Do not claim platform-native compliance unless specifically verified.
 - Do not describe motion only as decoration; connect it to feedback, orientation, hierarchy, or product feeling.
+- Do not omit the confirmed strategy and how user design language was interpreted.
+- Do not let user design language override the selected strategy without an explicit user confirmation.

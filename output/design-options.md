@@ -2,7 +2,7 @@
 
 ## Use When
 
-Use after requirement summary, track choice, initial mode selection, and relevant rule checks.
+Use after requirement summary, track choice, strategy choice, initial mode selection, and relevant rule checks.
 
 The purpose is to give the user meaningful design directions to choose from before implementation. Options should differ by product strategy, interaction model, information density, visual tone, or motion approach, not just color.
 
@@ -17,6 +17,11 @@ The purpose is to give the user meaningful design directions to choose from befo
 - Not good for:
 - Primary track:
 - Secondary track:
+- Primary strategy:
+- Secondary strategy:
+- Product-fit evidence:
+- User language interpretation:
+- Strategy-language conflicts:
 - Visual mode:
 - Product idea:
 - Information architecture:
@@ -38,6 +43,11 @@ The purpose is to give the user meaningful design directions to choose from befo
 - Not good for:
 - Primary track:
 - Secondary track:
+- Primary strategy:
+- Secondary strategy:
+- Product-fit evidence:
+- User language interpretation:
+- Strategy-language conflicts:
 - Visual mode:
 - Product idea:
 - Information architecture:
@@ -71,6 +81,8 @@ The purpose is to give the user meaningful design directions to choose from befo
 - Recommended option:
 - Reason:
 - Requirement evidence:
+- Strategy evidence:
+- User language interpretation:
 - Tradeoff accepted:
 - What remains undecided:
 - User decision needed:
@@ -85,3 +97,5 @@ The purpose is to give the user meaningful design directions to choose from befo
 - Do not create options that differ only by surface decoration.
 - Do not treat reference examples as mandatory unless confirmed.
 - Do not recommend a direction without stating the cost or compromise.
+- Do not omit primary strategy and product-fit evidence.
+- Do not hide conflicts between user design language and product-fit strategy.

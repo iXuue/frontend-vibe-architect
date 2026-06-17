@@ -17,6 +17,12 @@ The purpose is to turn the design brief into a practical build sequence that an 
 - Framework or stack, if known:
 - Existing files or app areas:
 - New files or app areas:
+- Primary track:
+- Primary strategy:
+- Secondary strategy:
+- Visual mode:
+- User language interpretation:
+- Strategy-language conflicts:
 - Assets required:
 - External dependencies:
 
@@ -41,6 +47,7 @@ The purpose is to turn the design brief into a practical build sequence that an 
 
 ### 4. Visual Token Guidance
 
+- Product-fit evidence:
 - Color roles:
 - Typography scale:
 - Spacing scale:
@@ -71,17 +78,19 @@ The purpose is to turn the design brief into a practical build sequence that an 
 
 ### 7. Implementation Order
 
-1. Establish layout shell and routing or screen structure.
-2. Build static content hierarchy without final motion.
+1. Establish layout shell and routing or screen structure from the confirmed track.
+2. Build static content hierarchy from the selected strategy.
 3. Add reusable components and state variants.
-4. Apply visual tokens and responsive constraints.
-5. Add motion and interaction details.
+4. Apply visual tokens from the visual mode and language interpretation.
+5. Add motion and interaction details that support the strategy.
 6. Add empty, loading, error, and success states.
 7. Run visual and functional verification.
 
 ### 8. Verification Steps
 
 - Requirement trace:
+- Strategy trace:
+- Language interpretation trace:
 - Desktop viewport check:
 - Mobile viewport check:
 - Text overflow check:
@@ -100,3 +109,4 @@ The purpose is to turn the design brief into a practical build sequence that an 
 - Do not omit verification steps.
 - Do not add implementation tasks that are not traceable to the requirement, selected direction, or design brief.
 - Do not treat visual polish as complete until readability, layout stability, interaction states, and reduced-motion behavior are considered.
+- Do not implement visual language choices that are not traceable to requirement summary, strategy, design options, or design brief.

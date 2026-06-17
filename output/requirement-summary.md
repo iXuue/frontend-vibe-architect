@@ -2,7 +2,7 @@
 
 ## Use When
 
-Use after `flows/intake.md` and before track or mode selection.
+Use after `flows/intake.md` and before track, strategy, or mode selection.
 
 The purpose is to separate what the user actually needs from examples, assumptions, taste language, and unresolved decisions.
 
@@ -45,6 +45,9 @@ The purpose is to separate what the user actually needs from examples, assumptio
 - Desired motion level:
 - Visual directions to consider:
 - Visual directions to avoid:
+- User language interpretation:
+- Product-fit evidence:
+- Strategy-language conflicts:
 
 ### 5. Inferred Assumptions
 
@@ -65,6 +68,7 @@ The purpose is to separate what the user actually needs from examples, assumptio
 ### 8. Routing Readiness
 
 - Ready to choose track:
+- Ready to choose strategy:
 - Ready to choose visual mode:
 - Ready to generate design options:
 - Must stop and ask before proceeding:
@@ -77,3 +81,5 @@ The purpose is to separate what the user actually needs from examples, assumptio
 - Do not hide conflicts or unresolved scope decisions.
 - Do not proceed to design options if a material open question would change platform, required screens, core workflow, or acceptance criteria.
 - Do not describe a visual example as a required style unless the user explicitly confirmed it.
+- Do not skip product-fit evidence when the user uses subjective design language.
+- Do not choose or imply a strategy before the requirement summary has enough product context.
